@@ -2,14 +2,12 @@ function dNews() {
   alert("hi");
 }
 
-function loader() {}
-
 function post(data) {
   let div = document.getElementById("here");
 
   //console.log(data);
   div.innerHTML = "";
-
+  let count = 0;
   for (const dd of data) {
     //
     let div1 = document.createElement("div1");
@@ -97,21 +95,44 @@ function post(data) {
         </div>
    
     `;
+    count++;
     div.appendChild(div1);
   }
+
+  let query = document.getElementById("count");
+  let category = document.getElementById(data[0].category_id).innerText;
+  //alert(category);
+
+  query.innerHTML = `
+  <h4 id="count" class="text-center text-gray-50 ssm:text-2xl sm:text-xl">
+          ${count} items founds in ${category}
+        </h4>
+  `;
+}
+
+function loader(data) {
+  //alert(data);
+  let div = document.getElementById("here");
+  let div1 = document.createElement("div1");
+  div.innerHTML = "";
+  div1.classList.add("loader");
+  //setTimeout(post(data), 50000);
+  div.appendChild(div1);
+  setTimeout(function () {
+    post(data);
+  }, 1500);
 }
 
 function showNews(id) {
   //alert(id);
   let text1 = "https://openapi.programming-hero.com/api/news/category/";
-  //alert(text2);
+  //console.log(text1.data.category_id);
   let result = text1.concat("", id);
   //alert(result);
-  loader();
   try {
     fetch(result)
       .then((res) => res.json())
-      .then((data) => post(data.data));
+      .then((data) => loader(data.data));
   } catch (error) {
     alert("Error fetching DAta");
   }
