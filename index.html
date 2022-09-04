@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transfer Site</title>
+    <title>News Collection</title>
     <link rel="shortcut icon" type="image/png" href="images/t.png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css"
@@ -58,7 +58,7 @@
               <div class="flex md:order-2">
                 <button
                   type="button"
-                  class="text-white ml-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="btn1 text-white ml-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   News
                 </button>
@@ -66,7 +66,7 @@
                   type="button"
                   class="text-white ml-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
-                  BLogs
+                  <a href="blog.html">Blogs</a>
                 </button>
                 <span
                   ><img
@@ -165,7 +165,7 @@
             <button class="bg-emerald-100 rounded p-3">Default</button></span
           >
         </div>
-        <div>
+        <div class="my-5">
           <span class="rounded p-3 bg-blue-400 cursor-pointer"
             >Today's Pick</span
           >
@@ -177,8 +177,8 @@
     </section>
 
     <section>
-      <div class="containerr">
-        <div class="grid grid-cols-4 gap-4">
+      <div class="containerr mx-10 my-10">
+        <div class="grid grid-cols-3 gap-4">
           <div
             class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
           >
@@ -201,6 +201,42 @@
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
+
+              <div class="my-5 flex text-slate-100 justify-between">
+                <div>
+                  <span
+                    ><img
+                      class="w-12 ml-3 rounded-full"
+                      src="https://res.cloudinary.com/dc9bjecdl/image/upload/v1660582196/avatars/srkitqfqmgzwvffo9kvj.png"
+                      alt="user photo"
+                  /></span>
+                  <p>Md Shehab</p>
+                </div>
+                <div class="pr-10">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-2xl">1.5M</span>
+                </div>
+              </div>
               <a
                 href="#"
                 class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
