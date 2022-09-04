@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer Site</title>
+    <link rel="shortcut icon" type="image/png" href="images/t.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            lgg: "1061px",
+            sm: "400px",
+            ssm: "500px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "826px",
+            // => @media (min-width: 762px) { ... }
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- ---------------------------header section -->
+    <section id="first-section">
+      <div class="containerr">
+        <div class="right">
+          <nav
+            class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600"
+          >
+            <div
+              class="container flex flex-wrap justify-between items-center mx-auto"
+            >
+              <a href="https://flowbite.com/" class="flex items-center">
+                <span
+                  class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+                  >News
+                </span>
+                <span class="text-lime-300 text-xl font-semibold">
+                  Collection</span
+                >
+              </a>
+              <div class="flex md:order-2">
+                <button
+                  type="button"
+                  class="text-white ml-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  News
+                </button>
+                <button
+                  type="button"
+                  class="text-white ml-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  BLogs
+                </button>
+                <span
+                  ><img
+                    class="w-12 ml-3 rounded-full"
+                    src="https://res.cloudinary.com/dc9bjecdl/image/upload/v1660582196/avatars/srkitqfqmgzwvffo9kvj.png"
+                    alt="user photo"
+                /></span>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section id="Second-Section" class="mt-20 block">
+      <div class="catagories">
+        <ul
+          class="flex justify-center flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+        >
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >Home</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >Breaking News</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >Regular News</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >International News</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >Sports</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >Entertainment</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >Culture</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >Arts</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              >All News</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="sort bg-slate-800 w-full p-5">
+        <h4 class="text-gray-50 text-2xl">No items found for category</h4>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
