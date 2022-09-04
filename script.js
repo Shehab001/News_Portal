@@ -2,12 +2,16 @@ function dNews() {
   alert("hi");
 }
 
+function loader() {}
+
 function post(data) {
   let div = document.getElementById("here");
 
   //console.log(data);
+  div.innerHTML = "";
 
   for (const dd of data) {
+    //
     let div1 = document.createElement("div1");
     //console.log(dd.thumbnail_url);
     div1.innerHTML = `
@@ -97,10 +101,15 @@ function post(data) {
   }
 }
 
-function showNews() {
-  //alert("hi");
+function showNews(id) {
+  //alert(id);
+  let text1 = "https://openapi.programming-hero.com/api/news/category/";
+  //alert(text2);
+  let result = text1.concat("", id);
+  //alert(result);
+  loader();
   try {
-    fetch("https://openapi.programming-hero.com/api/news/category/")
+    fetch(result)
       .then((res) => res.json())
       .then((data) => post(data.data));
   } catch (error) {
