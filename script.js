@@ -27,7 +27,7 @@ function dNews(a, b, c, d, e) {
           >
             <a href="#">
               <img
-                class="rounded-t-lg mx-auto mt-5"
+                class=" rounded-t-lg mx-auto mt-5"
                 src="${a}"
                 alt=""
               />
